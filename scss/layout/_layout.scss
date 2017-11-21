@@ -1,0 +1,40 @@
+html {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f5f5f5;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+.ez-bg--white {
+    background-color: $white;
+}
+
+.ez-bg--padding {
+    padding: 1.8rem;
+}
+
+.col-padding {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+
+// flexbox stuff
+.ez-flex {
+    display: flex;
+}
+
+.ez-flex--alignItemsCenter {
+    align-items: center;
+}
+
+.ez-flex--rowReverse {
+    flex-direction: row-reverse;
+}

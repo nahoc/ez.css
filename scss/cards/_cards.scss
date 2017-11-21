@@ -1,0 +1,45 @@
+.ez-card {
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);
+    padding: 1rem;
+    margin-bottom: 0.7rem;
+    background-color: $white;
+}
+
+.ez-card--noFlex {
+    display: inline-block;
+}
+
+.ez-card--avatar {
+    flex-direction: row;
+    padding: 0;
+}
+
+.ez-card--title {
+    font-weight: bold;
+    font-size: 105%;
+}
+
+.ez-card--subtitle {
+    color: darken($silver, 15%);
+}
+
+.ez-card--avatarRight {
+    flex-direction: row-reverse;
+    padding: 0;
+}
+
+.ez-card--avatarRounded {
+    flex-direction: row;
+    padding: 1rem;
+    .ez-card--label {
+        padding-right: 0;
+    }
+}
+
+.ez-card--label {
+    padding: 1rem;
+}
+
+.ez-card--rounded {
+    border-radius: 4px;
+}

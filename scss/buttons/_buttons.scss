@@ -1,0 +1,112 @@
+// ez button
+.ez-btn {
+    background-color: transparent;
+    border: 1px solid $silver;
+    padding: 0.4rem 1rem 0.3rem;
+    transition: all 0.14s ease-in-out;
+    text-decoration: none;
+    margin-bottom: 0.7rem;
+    margin-right: 0.4rem;
+    color: darken($silver, 50%);
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+// ez button primary
+.ez-btn--primary {
+    background-color: $peterRiver;
+    border-color: darken($peterRiver, 5%);
+    color: $white;
+    &:hover {
+        background-color: lighten($peterRiver, 5%);
+    }
+    &:active {
+        background-color: darken($peterRiver, 5%);
+    }
+}
+
+// ez button warning
+.ez-btn--warning {
+    background-color: $orange;
+    border-color: darken($orange, 5%);
+    color: $white;
+    &:hover {
+        background-color: lighten($orange, 5%);
+    }
+    &:active {
+        background-color: darken($orange, 5%);
+    }
+}
+
+// ez button danger
+.ez-btn--danger {
+    background-color: $alizarin;
+    border-color: darken($alizarin, 5%);
+    color: $white;
+    &:hover {
+        background-color: lighten($alizarin, 5%);
+    }
+    &:active {
+        background-color: darken($alizarin, 5%);
+    }
+}
+
+// ez button success
+.ez-btn--success {
+    background-color: $emerald;
+    border-color: darken($emerald, 5%);
+    color: $white;
+    &:hover {
+        background-color: lighten($emerald, 5%);
+    }
+    &:active {
+        background-color: darken($emerald, 5%);
+    }
+}
+
+// ez button disabled
+.ez-btn--disabled {
+    background-color: transparent;
+    border-color: $silver;
+    color: $silver;
+    cursor: not-allowed;
+    &:hover {
+        cursor: not-allowed;
+    }
+}
+
+// ez button reverse
+.ez-btn--reverse {
+    background-color: transparent;
+    border-color: darken($wetAsphalt, 5%);
+    color: $wetAsphalt;
+}
+
+// ez button primary reverse
+.ez-btn--primaryReverse {
+    background-color: transparent;
+    border-color: darken($peterRiver, 5%);
+    color: $peterRiver;
+}
+
+// ez button warning reverse
+.ez-btn--warningReverse {
+    background-color: transparent;
+    border-color: darken($orange, 5%);
+    color: $orange;
+}
+
+// ez button danger reverse
+.ez-btn--dangerReverse {
+    background-color: transparent;
+    border-color: darken($alizarin, 5%);
+    color: $alizarin;
+}
+
+// ez button success reverse
+.ez-btn--successReverse {
+    background-color: transparent;
+    border-color: darken($emerald, 5%);
+    color: $emerald;
+}

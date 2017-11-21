@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>ez.css</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/main.css">
+
+<body class="container">
+    <br/>
+    <section class="ez-card ez-card--rounded">
+        <h1 id="text">Text</h1>
+        <hr/>
+        <br/>
+        <p>Heading</p>
+        <p>
+            <h1>Heading 1</h1>
+            <h2>Heading 2</h2>
+            <h3>Heading 3</h3>
+            <h4>Heading 4</h4>
+            <h5>Heading 5</h5>
+            <h6>Heading 6</h6>
+        </p>
+        <br/>
+        <p>Paragraph</p>
+        <p>Fusce blandit, libero sit amet posuere congue, urna leo posuere tellus, in ultricies est augue sed justo. Donec porta
+            libero eget dapibus bibendum. Morbi quis sagittis tortor. Nulla tortor erat, rutrum ut dapibus vel, faucibus
+            sed nunc. Proin nec libero sed nisl viverra volutpat sit amet imperdiet leo. Aliquam efficitur convallis felis,
+            nec efficitur dui malesuada porta. Aliquam vitae porttitor ex, ut congue dolor. Maecenas felis neque, sodales
+            eget fringilla eu, vulputate in nulla.</p>
+        <br/>
+        <p>Links</p>
+        <p><a target="_blank" href="#">https://google.com/</a></p>
+        <br/>
+        <p>Code</p>
+        <pre>public static String randomString(int i) {
+    Random ran = new Random(i);
+    StringBuilder sb = new StringBuilder();
+    while (true) {
+        int k = ran.nextInt(27);
+        if (k == 0) {
+            sb.append((char)('`' + k));
+            break;
+        }
+        return sb.toString();
+    }
+}</pre>
+        <br/>
+        <p>Small</p>
+        <p>
+            <small>Aliquam vitae porttitor ex.</small>
+        </p>
+        <br/>
+        <p>Quote</p>
+        <p>
+            <blockquote>When I do good, I feel good; when I do bad, I feel bad, and that is my religion.</blockquote>
+        </p>
+        <br/>
+        <p>List</p>
+        <ul>
+            <li>Element 1</li>
+            <li>Element 2
+                <ul>
+                    <li>Sub-element 1</li>
+                    <li>Sub-element 2</li>
+                </ul>
+            </li>
+            <li>Element 3</li>
+            <li>Element 4</li>
+        </ul>
+    </section>
+    <section class="ez-card ez-card--rounded">
+        <h1 id="grid">Grid</h1>
+        <hr/>
+        <br/>
+    </section>
+    <section class="ez-card ez-card--rounded">
+        <h1>Form</h1>
+        <hr/>
+        <br/>
+        <form action="">
+            <p>
+                <label>Label</label>
+            </p>
+            <p>
+                <input type="text" placeholder="Placeholder" />
+            </p>
+            <p>
+                <label>Textarea</label>
+            </p>
+            <textarea type="text" placeholder="Placeholder" />Pre-filled text</textarea>
+            </p>
+            <p>
+                <button class="ez-btn ez-btn--primary" type="submit">Submit</button>
+            </p>
+        </form>
+    </section>
+    <section class="ez-card ez-card--rounded">
+        <h1>Buttons</h1>
+        <hr/>
+        <br/>
+        <p>
+            <button class="ez-btn">ez-btn</button>
+            <button class="ez-btn ez-btn--primary">ez-btn--primary</button>
+            <button class="ez-btn ez-btn--warning">ez-btn--warning</button>
+            <button class="ez-btn ez-btn--danger">ez-btn--danger</button>
+            <button class="ez-btn ez-btn--success">ez-btn--success</button>
+            <button class="ez-btn ez-btn--disabled" disabled>ez-btn--disabled</button>
+        </p>
+    </section>
+    <section class="ez-card ez-card--rounded">
+        <h1>Reversed buttons</h1>
+        <hr/>
+        <br/>
+        <p>
+            <button class="ez-btn ez-btn--reverse">ez-btn--reverse</button>
+            <button class="ez-btn ez-btn--primaryReverse">ez-btn--primaryReverse</button>
+            <button class="ez-btn ez-btn--warningReverse">ez-btn--warningReverse</button>
+            <button class="ez-btn ez-btn--dangerReverse">ez-btn--dangerReverse</button>
+            <button class="ez-btn ez-btn--successReverse">ez-btn--successReverse</button>
+            <button class="ez-btn ez-btn--disabledReverse">ez-btn--disabledReverse</button>
+        </p>
+    </section>
+    <section class="ez-card ez-card--rounded">
+        <h1>Cards</h1>
+        <hr/>
+        <br/>
+        <p>Components</p>
+        <div class="row">
+            <div class="col-padding col-lg-4">
+                <div class="ez-card">
+                    <div class="ez-card--text">ez-card</div>
+                </div>
+            </div>
+            <div class="col-padding col-lg-4">
+                <div class="ez-card ez-card--noFlex">
+                    <div class="ez-card--text">ez-card--noFlex</div>
+                </div>
+            </div>
+            <div class="col-padding col-lg-4">
+                <div class="ez-card ez-card--rounded">
+                    <div class="ez-card--text">ez-card--rounded</div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-padding col-lg-4">
+                <div class="ez-card ez-card--rounded">
+                    <div class="ez-card--text">
+                        <div class="ez-card--title">ez-card--title</div>
+                        <div class="ez-card--subtitle">ez-card--subtitle</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-padding col-lg-4">
+                <div class="ez-card ez-card--avatar">
+                    <div class="ez-flex ez-flex--alignItemsCenter">
+                        <img class="ez-img" width="50" height="50" src="https://picsum.photos/50" />
+                        <div class="ez-card--text ez-card--label">
+                            <div>ez-card--avatar</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-padding col-lg-4">
+                <div class="ez-card ez-card--avatar">
+                    <div class="ez-flex ez-flex--alignItemsCenter ez-flex--rowReverse">
+                        <img class="ez-img" width="50" height="50" src="https://picsum.photos/50" />
+                        <div class="ez-card--text ez-card--label">
+                            <div>ez-card--avatarRight</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-padding col-lg-4">
+                <div class="ez-card ez-card--avatarRounded">
+                    <div class="ez-flex ez-flex--alignItemsCenter">
+                        <img class="ez-img ez-img--rounded" width="75" height="75" src="https://picsum.photos/75" />
+                        <div class="ez-card--text ez-card--label">
+                            <div>ez-card--avatarRounded</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p>Example</p>
+        <div class="row">
+            <div class="col-padding col-lg-4">
+                <div class="ez-card ez-card--rounded ez-card--avatarRounded">
+                    <div class="ez-flex ez-flex--alignItemsCenter">
+                        <img class="ez-img ez-img--rounded" width="75" height="75" src="https://picsum.photos/75" />
+                        <div class="ez-card--text ez-card--label">
+                            <div class="ez-card--title">Ezmie Bouchard</div>
+                            <div class="ez-card--subtitle">Recruteuse technique</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="ez-card ez-card--rounded">
+        <h1>Images</h1>
+        <hr/>
+        <br/>
+        <div class="row">
+            <div class="col-padding col-lg-4">
+                <img class="ez-img" width="120" height="120" src="https://picsum.photos/120" />
+            </div>
+            <div class="col-padding col-lg-4">
+                <img class="ez-img ez-img--rounded" width="120" height="120" src="https://picsum.photos/120" />
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
